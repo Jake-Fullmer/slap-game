@@ -8,13 +8,45 @@
   <title>Slap Game</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="game.css">
 </head>
 
 <body>
+  <header class="container">
+    <div class="row">
+      <div class="col-12">
+        <span>Name: <span id="name">--</span></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <span>Health: <span id="health">--</span></span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <span>Hits: <span id="hits">--</span></span>
+      </div>
+    </div>
 
+  </header>
+  <div class="row container-fluid mt-5">
+    <div class="col-12 text-center">
+      <img class="imgTarget"
+        src="https://images.unsplash.com/photo-1527437445244-7e10c0f68034?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=80">
+    </div>
+  </div>
+  <footer>
+    <row class="container-fluid">
+      <div class="col-12 text-center">
+        <button type="button" class="btn btn-primary" onClick="slap()">SLAP</button>
+        <button type="button" class="btn btn-primary" onClick="pullHair()">BITE</button>
+        <button type="button" class="btn btn-primary" onClick="bite()">PULL HAIR</button>
+      </div>
+    </row>
+  </footer>
 
-  <script src="app.js"></script>
+  <script src="game.js"></script>
 </body>
 
 </html>

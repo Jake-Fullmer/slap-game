@@ -13,37 +13,38 @@
 
 <body>
   <header class="container">
-    <div class="row">
-      <div class="col-12">
-        <span>Name: <span id="name">--</span></span>
-      </div>
+    <div class="row mt-5">
+      <div class="col-12"><span>Name: <span id="name">--</span></span></div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <span>Health: <span id="health">--</span></span>
-      </div>
+      <div class="col-12"><span>Health: <span id="health">--</span></span></div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <span>Hits: <span id="hits">--</span></span>
-      </div>
+      <div class="col-12"><span>Hits: <span id="hits">--</span></span></div>
     </div>
 
   </header>
-  <div class="row container-fluid mt-5">
+  <div class="row container-fluid my-5">
     <div class="col-12 text-center">
       <img class="imgTarget"
         src="https://images.unsplash.com/photo-1527437445244-7e10c0f68034?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1924&q=80">
     </div>
   </div>
+  <div id="items" class="row container-fluid my-3">
+    <div class="col-12 text-center">
+      <button type="button" class="btn btn-primary my-1" onClick="giveFire()">FIRE</button>
+      <button type="button" class="btn btn-primary my-1" onClick="givePoison()">POISON</button>
+      <button type="button" class="btn btn-primary my-1" onClick="giveIce()">ICE</button>
+    </div>
+  </div>
   <footer>
-    <row class="container-fluid">
+    <div class="row container-fluid">
       <div class="col-12 text-center">
-        <button type="button" class="btn btn-primary" onClick="slap()">SLAP</button>
-        <button type="button" class="btn btn-primary" onClick="pullHair()">BITE</button>
-        <button type="button" class="btn btn-primary" onClick="bite()">PULL HAIR</button>
+        <button type="button" class="btn btn-primary my-1" onClick="slap()">SLAP</button>
+        <button type="button" class="btn btn-primary my-1" onClick="pullHair()">BITE</button>
+        <button type="button" class="btn btn-primary my-1" onClick="bite()">PULL HAIR</button>
       </div>
-    </row>
+    </div>
   </footer>
 
   <script src="game.js"></script>

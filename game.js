@@ -52,18 +52,6 @@ function addMods() {
 }
 
 
-
-// let totalMods = billy.items.map, billy.items.reduce;
-// for (var i in billy.items) {
-//   let zero = 0;
-//   if (billy.items[i].modifier) {
-//     billy.health -= (billy.hits + billy.items[i].modifier);
-//     return zero += billy.items[i].modifier;
-//   }
-// }
-// }
-
-
 function update() {
   document.getElementById("health").innerHTML = billy.health;
   document.getElementById("hits").innerHTML = billy.hits;
